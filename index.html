@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header>
+        <h1>Calculator</h1>
+    </header>
+    <div id="calculator">
+        <div>
+            <div>
+                <input type="text" id="display" readonly />
+            </div>
+            <div>
+                <input type="text" id="result" readonly />
+            </div>
+
+            <div class="Calbutton">
+                <button onclick="inverse()">1/x</button>
+                <button onclick="square()">exp</button>
+                <button onclick="sqrt()">root</button>
+                <button onclick="del()">←</button>
+            </div>
+            <div class="Calbutton">
+                <button onclick="outputclear()">CE</button>
+                <button onclick="clearall()">C</button>
+                <button onclick="sign('%')">%</button>
+                <button onclick="sign('/')">/</button>
+            </div>
+            <div class="Calbutton">
+                <button onclick="number(7)">7</button>
+                <button onclick="number(8)">8</button>
+                <button onclick="number(9)">9</button>
+                <button onclick="sign('*')">*</button>
+            </div>
+            <div class="Calbutton">
+                <button onclick="number(4)">4</button>
+                <button onclick="number(5)">5</button>
+                <button onclick="number(6)">6</button>
+                <button onclick="sign('-')">-</button>
+            </div>
+            <div class="Calbutton">
+                <button onclick="number(1)">1</button>
+                <button onclick="number(2)">2</button>
+                <button onclick="number(3)">3</button>
+                <button onclick="sign('+')">+</button>
+            </div>
+            <div class="Calbutton">
+                <button onclick="swap()">+-</button>
+                <button onclick="number(0)">0</button>
+                <button onclick="decimal()">.</button>  
+                <button onclick="assign()">=</button>
+            </div>
+            <div>
+                <textarea id="list"></textarea>
+            </div>
+
+        </div>
+    </div>
+    <!-- <div>
+        <table border="1">
+            <tr>
+                <td colspan="4">
+                    <input type="text" id="display">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="4">
+                    <input type="text" class="result" readonly>
+                </td>
+            </tr>
+            <tr>
+                <td onclick="inverse()">1/x</td>
+                <td onclick="square()">exp</td>
+                <td onclick="sqrt()">root</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td onclick="outputclear()">CE</td>
+                <td onclick="allclear()">C</td>
+                <td onclick="percent()">%</td>
+                <td onclick="division()">/</td>
+            </tr>
+            <tr>
+                <td onclick="number(7)">7</td>
+                <td onclick="number(8)">8</td>
+                <td onclick="number(9)">9</td>
+                <td onclick="multiply()">*</td>
+            </tr>
+            <tr>
+                <td onclick="number(4)">4</td>
+                <td onclick="number(5)">5</td>
+                <td onclick="number(6)">6</td>
+                <td onclick="subtraction()">-</td>
+            </tr>
+            <tr>
+                <td onclick="number(1)">1</td>
+                <td onclick="number(2)">2</td>
+                <td onclick="number(3)">3</td>
+                <td onclick="plus()">+</td>
+            </tr>
+            <tr>
+                <td onclick="swap()">+-</td>
+                <td onclick="number(0)">0</td>
+                <td onclick="decimal()">.</td>
+                <td onclick="assign()">=</td>
+            </tr>
+        </table>
+    </div> -->
+    <script src="calculate.js"></script>
+</body>
+</html>
